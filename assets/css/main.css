@@ -54,3 +54,11 @@
 #overview .col-sm-1{
     height:100px
 }
+.wrapper-scroller{
+    border:1px solid red;
+}
+#developers img{
+    width: 736px;
+    height: auto
+}
+

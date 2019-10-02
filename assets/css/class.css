@@ -1,7 +1,17 @@
 body{
     font-family: "DM Sans", sans-serif;
 }
-
+.clearfix::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.clearfix>*{
+float: left;
+}
+.row{
+    text-align: center;
+}
 .container-fluid.dgocean{
     margin-left: auto;
     margin-right: auto;
