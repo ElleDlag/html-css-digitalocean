@@ -28,9 +28,6 @@
     margin-right: 10px;
     height:29px;
 }
-.navbar-brand>img{
-    display:block
-}
 .navbar .navbar_bottom img.img-white{
     display: none;
 }
@@ -202,6 +199,9 @@ header .bg-header{
     }
     .navbar .navbar_bottom .navbar-brand{
         color:white;
+    }
+    .navbar-brand>img {
+        display: block;
     }
     .navbar .navbar_bottom img.img-blue{
         display: none;
