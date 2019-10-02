@@ -70,3 +70,12 @@
     padding:120px 0;
     background: #031A4E url("../img/data-center-map-20321538.svg")
 }
+
+#expirience{
+    background:#F3F5F9;
+}
+.wrapper-scroller_expirience{
+    background: #fff;
+    padding:32px;
+    height:360px;
+}
