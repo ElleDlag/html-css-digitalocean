@@ -1,31 +1,23 @@
-.navbar_top{
-    background: #666
+/* #region  NAVBAR */
+.navbar .navbar_top{
+    border-bottom: 1px solid #ddd;
 }
-.navbar_bottom{
-    background: #b8fc9e
-}
-
-
 
 .navbar{
     margin-bottom: 0;
     border:0;
 }
-#header .bg-header{
-    background: url("../img/bg-home-1-d54581d7.jpg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    min-height: 800px;
-}
+/* #endregion */
 
-[class^="col-"]{
+
+/* [class^="col-"]{
     border:1px solid black;
-}
+} */
 
+/* #region  HEADER */
 #header{
     color: #fff
 }
-
 #header .form-wrapper{
     background-color: #fff;
     border: 1px solid rgba(3,27,78,.1);
@@ -36,27 +28,45 @@
     padding: 32px;
 
 }
+/* #endregion */
+
+
+/* #region  PARTNER */
 #partner{
     background: #F3F5F9;
 }
 #partner .row{
-    border:1px solid violet;
-    line-height:79px;
-    text-align: center
-
+    padding:0 32px;
+    text-align: center;
+    line-height: 72px;
+}
+#partner .col-sm-2{
+    line-height: 72px;
+    border:1px solid blue
 }
 
 #partner img{
-    max-width:59%;
-    height:auto; 
+    border:1px solid red
 }
+#partner .col-sm-2:not(:last-child) img{
+    max-width: 100%;
+    max-height:76px;
+}
+#partner .col-sm-2:last-child img{
+    max-width:100%;
+    max-height:36px
+}
+/* #endregion */
 
+
+/* #region  OVERVIEW */
 #overview .col-sm-1{
     height:100px
 }
-.wrapper-scroller{
-    border:1px solid red;
-}
+/* #endregion */
+
+
+/* #region  DEVELOPERS */
 #developers img{
     width: 736px;
     height: auto
@@ -65,13 +75,18 @@
     width:41px;
     height: 41px
 }
+/* #endregion */
 
+
+/* #region  SERVICES */
 #services{
     padding:120px 0;
     background: #031A4E url("../img/data-center-map-20321538.svg")
 }
+/* #endregion */
 
 
+/* #region  EXPIRIENCE */
 #expirience{
     background:#F3F5F9;
 }
@@ -80,7 +95,11 @@
     padding:32px;
     height:360px;
 }
+/* #endregion */
 
+
+
+/* #region  START NOW */
 .bg-start-now{
     background: url("../img/bg-home-1-d54581d7.jpg");
     background-position: 11% 97%;
@@ -88,8 +107,10 @@
     padding-bottom: 64px;
     padding-top: 64px;
 }
+/* #endregion */
 
 
+/* #region  FOOTER */
 #footer{
     background: #010E27
 }
@@ -105,4 +126,25 @@
     border-top:1px solid #fff;
     padding-top:32px;
 
+}
+/* #endregion */
+
+
+
+@media (min-width:1200px){
+
+}
+@media (max-width:767px){
+    #partner .row{
+        border:3px solid red;
+    }
+    #partner .row,
+    #partner .col-sm-2{
+        line-height: 166px;
+    }
+    #partner .col-sm-2:not(:last-child) img,
+    #partner .col-sm-2:last-child img{
+        max-width: 100%;
+        max-height:100%
+    }
 }
