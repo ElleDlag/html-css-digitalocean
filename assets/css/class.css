@@ -16,6 +16,9 @@ li{
 .clearfix>*{
 float: left;
 }
+.navbar-brand>img{
+    display:none
+}
 .row{
     text-align: center;
 }
