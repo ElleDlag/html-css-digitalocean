@@ -4,3 +4,21 @@
 .navbar_bottom{
     background: #b8fc9e
 }
+
+
+
+.navbar{
+    margin-bottom: 0;
+    border:0;
+}
+#header .bg-header{
+    background: url("../img/bg-home-1-d54581d7.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+
+[class^="col-"]{
+    border:1px solid black;
+    height:100px;
+}
