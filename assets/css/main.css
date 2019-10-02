@@ -20,5 +20,33 @@
 
 [class^="col-"]{
     border:1px solid black;
-    height:100px;
+}
+
+#header{
+    color: #fff
+}
+
+#header .form-wrapper{
+    background-color: #fff;
+    border: 1px solid rgba(3,27,78,.1);
+    border-radius: 5px;
+    -webkit-box-shadow: 0 10px 20px rgba(3,27,78,.1);
+    box-shadow: 0 10px 20px rgba(3,27,78,.1);
+    margin: 0;
+    padding: 32px;
+
+}
+#partner{
+    background: #F3F5F9;
+}
+#partner .row{
+    border:1px solid violet;
+    line-height:79px;
+    text-align: center
+
+}
+
+#partner img{
+    max-width:59%;
+    height:auto; 
 }
