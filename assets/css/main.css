@@ -79,3 +79,11 @@
     padding:32px;
     height:360px;
 }
+
+.bg-start-now{
+    background: url("../img/bg-home-1-d54581d7.jpg");
+    background-position: 11% 97%;
+    background-repeat: no-repeat;
+    padding-bottom: 64px;
+    padding-top: 64px;
+}
