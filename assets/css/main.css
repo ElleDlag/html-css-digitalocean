@@ -65,3 +65,8 @@
     width:41px;
     height: 41px
 }
+
+#services{
+    padding:120px 0;
+    background: #031A4E url("../img/data-center-map-20321538.svg")
+}
