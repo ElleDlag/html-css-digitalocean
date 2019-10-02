@@ -50,3 +50,7 @@
     max-width:59%;
     height:auto; 
 }
+
+#overview .col-sm-1{
+    height:100px
+}
