@@ -216,15 +216,44 @@ main{
 
 /* #region  DEVELOPERS */
 #developers{
-    background: #f3f5f9    
+    background: #f3f5f9  ;
+    padding:60px 0;
+}
+#developers .wrapper-scroller {
+    padding: 0 60px;
+    position:relative;
 }
 #developers img{
-    width: 736px;
-    height: auto
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(3,27,78,.06);
+  
 }
-#cert-size{
+#developers p.p-section_sub {
+    text-align: center;
+    margin-top: 30px;
+    color:#000
+}
+#developers .control-scroller-l,
+#developers .control-scroller-r{
+    height:81%;
+    cursor:pointer;
+    background:none;
+}
+#developers .control-scroller-l:hover,
+#developers .control-scroller-r:hover{
+    color:#0069ff;
+}
+
+
+/* #endregion */
+
+
+/* #region  BUSINESS */
+#business #cert-size{
     width:41px;
-    height: 41px
+    height: 41px;
 }
 /* #endregion */
 
@@ -334,9 +363,6 @@ main{
     #header.bg-header{
         background: #0248ff
     }
-    #header .row{
-        margin: 0
-    }
     #header .form-column{
         padding:0;
     }
@@ -353,10 +379,15 @@ main{
         padding:10px;
         margin-bottom: 30px;
     }
-    #overview .container-fluid>.row,
-    #overview .col-sm-7>.row{
-            margin-left:0;
+
+    #developers .wrapper-scroller {
+        padding: 0;
+        position:relative;
     }
+    #developers .control-scroller-l,
+    #developers .control-scroller-r{
+    display: none;
+}
 
 }
 @media (min-width:576px) and (max-width:767px){

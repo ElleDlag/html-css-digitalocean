@@ -21,7 +21,8 @@ float: left;
 }
 .row{
     text-align: center;
-    width:100%
+    width:100%;
+    margin:0
 }
 .container-fluid.dgocean{
     margin-left: auto;
@@ -31,6 +32,14 @@ float: left;
     padding-right: 16px;
     width: 100%;
     /* border:1px solid red */
+}
+.container-fluid.dgocean-small{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
 }
 /* #endregion */
 
@@ -125,6 +134,9 @@ ul.ul-section li:hover{
 ul.ul-section li:hover:before{
     background:#031b4e80;
 }
+ul.ul-btn-scroller{
+    display: inline-block;
+}
 /* #endregion */
 
 
@@ -159,6 +171,47 @@ ul.ul-section li:hover:before{
         width:22%;
     }
 }
+
+
+
+/* #region  CAROUSEL CONTROL */
+.control-scroller-l{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:60px;
+    height:100%;
+    background:rgba(0, 0, 0, 0.1);
+}
+.control-scroller-r:before,
+.control-scroller-l:before{
+    position:absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.control-scroller-r:before{
+    content:"\f054";
+}
+.control-scroller-l:before{
+    content:"\f053";
+}
+.control-scroller-r{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    width:60px;
+    height:100%;
+    background:rgba(0, 0, 0, 0.1);
+}
+/* #endregion */
+
+
 
 .line-hr:after{
     content: "";
