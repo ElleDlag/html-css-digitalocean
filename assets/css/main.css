@@ -264,6 +264,25 @@ main{
     width:41px;
     height: 41px;
 }
+@media (max-width:959px){
+    #business .col-sm-3{
+        width:calc(((100% / 12) * 6));
+        min-height: 250px;
+        padding-bottom: 0;
+    }
+}
+@media (max-width:767px){
+    #business .col-sm-3{
+        min-height: 320px;
+    }
+}
+@media (max-width:449px){
+    #business .col-sm-3{
+        width:100%;
+        padding-bottom: 30px;
+        min-height: auto;
+    }
+}
 /* #endregion */
 
 
