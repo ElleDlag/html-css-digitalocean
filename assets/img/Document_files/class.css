@@ -1,0 +1,132 @@
+/* #region  body and structure */
+body{
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+}
+.clearfix::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.clearfix>*{
+float: left;
+}
+.mt-16{
+    margin: 0;
+    margin-top: 16px;
+    position: relative
+}
+.pt-16{
+    padding-top: 16px;
+}
+.row{
+    text-align: center;
+    width:100%
+}
+.container-fluid.dgocean{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    /* border:1px solid red */
+}
+/* #endregion */
+
+
+
+/* #region  TEXT AND LIST */
+h1{
+    font-size: 6.2rem;
+    font-weight: 700;
+    text-align: left
+}
+h2{
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+    color:#000;
+    margin:8px 0 32px
+}
+p.p-title{
+    font-size:2.4rem;
+    font-weight: 400;
+    opacity: .8;
+    letter-spacing: 1.7px;
+    line-height: 3rem;
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+p.p_form-terms{
+    color:#777;
+    font-size: 12px;
+}
+
+li{
+    list-style-type: none;
+}
+/* #endregion */
+
+
+
+/* #region  COMPONENTS */
+.navbar-brand>img{
+    display:none
+}
+.form-control{
+    border:1px solid #ddd;
+    box-shadow: none;
+    margin:0;
+}
+.form-control:focus{
+    border-color: #0248ff;
+    outline: 0;
+    box-shadow: none
+}
+.line-hr{
+    display: inline-block;
+    width:33%;
+    position: relative;
+    height:16px;
+}   
+.line-hr:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height:1px;
+    background: #eee;
+    width:88%;
+    margin:auto;
+}   
+
+.pos-absolute-xy{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%)
+}
+.pos-absolute-yl{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%)
+}
+.pos-absolute-yr{
+    position: absolute;
+    top:50%;
+    right:0;
+    transform: translateY(-50%)
+}
+.pos-absolute-top{
+    position: absolute;
+    top:0;
+    left:0
+}
+/* #endregion */
+
+
