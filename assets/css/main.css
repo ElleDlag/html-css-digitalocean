@@ -198,13 +198,26 @@ main{
 
 
 /* #region  OVERVIEW */
+#overview{
+    padding:60px 0 64px;
+}
 #overview .col-sm-1{
     height:100px
+}
+#overview h2{
+    margin:0 0 16px;
+}
+#overview .col-xs-6{
+    text-align: left;
+    margin-bottom: 32px;
 }
 /* #endregion */
 
 
 /* #region  DEVELOPERS */
+#developers{
+    background: #f3f5f9    
+}
 #developers img{
     width: 736px;
     height: auto
@@ -335,6 +348,14 @@ main{
     #partner .col-sm-2:last-child img{
         max-width: 100%;
         max-height:100%
+    }
+    #overview ul{
+        padding:10px;
+        margin-bottom: 30px;
+    }
+    #overview .container-fluid>.row,
+    #overview .col-sm-7>.row{
+            margin-left:0;
     }
 
 }

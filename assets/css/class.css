@@ -56,6 +56,12 @@ h3.title-partner{
     color:#777;
     text-align: center;
 }
+h3.h3-section_sub{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: left;
+    margin:8px 0 16px;
+}
 p.p-title{
     font-size:2.4rem;
     font-weight: 400;
@@ -71,6 +77,18 @@ p.p_form-terms{
     font-size: 12px;
 
 }
+p.p-section{
+    font-size:2rem;
+    font-weight:400;
+    text-align: center;
+    margin:16px 0 64px;
+}
+p.p-section_sub{
+    font-size:1.6rem;
+    font-weight:400;
+    line-height: 2.4rem;
+    text-align: left
+}
 a{
     color:#0069ff;
     font-size: 16px;
@@ -78,6 +96,34 @@ a{
 
 li{
     list-style-type: none;
+}
+ul.ul-section{
+    text-align: left;
+}
+ul.ul-section li{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #031b4e80;
+    padding: 17px 10px 17px 30px;
+    position: relative;
+}
+ul.ul-section li:before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width:2px;
+    height: 100%;
+    background:#ddd
+}
+
+ul.ul-section li:hover{
+    cursor:pointer;
+    color: #031b4e;
+}
+ul.ul-section li:hover:before{
+    background:#031b4e80;
 }
 /* #endregion */
 
