@@ -2,6 +2,7 @@
 .navbar{
     margin-bottom: 0;
     border:0;
+    box-shadow: 0 2px 4px rgba(3,27,78,.1);
     z-index:1;
     background: #fff
 }
@@ -10,6 +11,7 @@
 }
 .navbar .navbar_top{
     border-bottom: 1px solid #ddd;
+    height:40px;
 }
 .navbar .navbar_bottom{
     padding-top:10px;
@@ -51,7 +53,7 @@
 
 /* #region  HEADER */
 main{
-    margin-top:134px;
+    margin-top:40px;
 }
 #header{
     color: #fff;
@@ -61,10 +63,26 @@ main{
     background-position: bottom;
     background-repeat: no-repeat;
     position: relative;
-    padding: 134px 0;
+    padding-top: 90px;
+    min-height: 800px;
 }
+/* only background */
+/* @media (max-width:1207px){
+#header.bg-header{
+    padding: 104px 0;
+}
+}
+@media (max-width:767px){
+    #header.bg-header{
+        padding: 64px 0;
+        background: #0248ff;
+    }
+} */
+
+
 #header .row{
     position: relative;
+    padding:64px 0
 }
 
 /* header form */
@@ -106,19 +124,22 @@ main{
     color:#777;
     font-weight: 400;
 }
+#header .position-btn{
+    position: relative;
+    border:1px solid red;
+    width:48%;
+    background: #d5e4f7;
+    border: 1px solid rgba(0,105,255,.2);
+    border-radius: 5px;
+    height:48px;
+}
+#header .position-btn:first-child{
+    margin-right: 2%;
+}
 #header .sign-social a{
-   padding:0 50px;
    font-size: 1.6rem;
    font-weight: 700;
-   height:48px;
-   line-height:48px;
    color:#031b4e;
-   background: #d5e4f7;
-   border: 1px solid rgba(0,105,255,.2);
-   position:relative;
-}
-#header .form_google-btn{
-    margin-right:48px;
 }
 #header .sign-social img{
     left:15px;
@@ -233,13 +254,12 @@ main{
 }
 @media (max-width:1049px){
     .navbar-fixed-top{
-        position: initial;
+        position: absolute;
         right: initial;
         left: initial;
-        background: #0349FF url(../img/bg-home-1-d54581d7.jpg);
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-position: 50% -12.3%
+        width:100%;
+        background: transparent;
+        box-shadow: none
     }
     .navbar .navbar_top{
         display: none;
@@ -277,6 +297,19 @@ main{
 @media (min-width:768px) and (max-width:991){
 }
 @media (max-width:767px){
+    #header.bg-header{
+        background: #0248ff
+    }
+    #header .row{
+        margin: 0
+    }
+    #header .form-column{
+        padding:0;
+    }
+    #header .col-sm-7.pos-absolute-yl {
+        position: initial;
+        transform: unset;
+    }
     #partner .row,
     #partner .col-sm-2{
         line-height: 166px;
@@ -286,6 +319,10 @@ main{
         max-width: 100%;
         max-height:100%
     }
+
 }
 @media (min-width:576px) and (max-width:767){
 }
+
+
+

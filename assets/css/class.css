@@ -54,7 +54,7 @@ p.p-title{
     font-weight: 400;
     opacity: .8;
     letter-spacing: 1.7px;
-    line-height: 3rem;
+    line-height: 3.8rem;
     text-align: left;
     margin-top: 16px;
     margin-bottom: 32px;
@@ -90,7 +90,18 @@ li{
     width:33%;
     position: relative;
     height:16px;
-}   
+}
+@media (min-width:768px)and (max-width:1039px){
+    .line-hr{
+        width:24%;
+    }
+}
+@media (max-width:449px){
+    .line-hr{
+        width:22%;
+    }
+}
+
 .line-hr:after{
     content: "";
     display: block;
@@ -130,3 +141,14 @@ li{
 /* #endregion */
 
 
+
+@media (min-width:1000px) and (max-width:1199px){
+    h1{
+        font-size: 54px;
+    }
+}
+@media (max-width:999px){
+    h1{
+        font-size: 40px;
+    }
+}
