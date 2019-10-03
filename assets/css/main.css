@@ -54,14 +54,21 @@ main{
     margin-top:122px;
 }
 #header{
-    color: #fff;
-
+    color: #fff
 }
-header .bg-header{
+#header .bg-header{
     background: #0248ff url(../img/bg-home-1-d54581d7.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     min-height: 800px;
+    position: relative;
+}
+#header .col-sm-7{
+    margin-top: 10.5%;
+}
+/* header form */
+#header .form-column{
+    padding:16px 0 0 16px;
 }
 #header .form-wrapper{
     background-color: #fff;
@@ -71,8 +78,51 @@ header .bg-header{
     box-shadow: 0 10px 20px rgba(3,27,78,.1);
     margin: 0;
     padding: 32px;
-
+    position: relative;
 }
+#header .form-group label{
+    color:#000;
+    visibility:hidden;
+}
+#header .form-wrapper input{
+    height:48px;
+}
+#header .form-wrapper input,
+#header .form-wrapper input::placeholder{
+    font-size:1.6rem
+}
+#header .form-wrapper .btn-create{
+    width:100%;
+    background:#1942FF;
+    color: white;
+    font-size: 1.6rem;
+    height:48px;
+    border:0;
+    font-weight:500;
+}
+#header .form-divider{
+    font-size: 1.6rem;
+    color:#777;
+    font-weight: 400;
+}
+#header .sign-social a{
+   padding:0 50px;
+   font-size: 1.6rem;
+   font-weight: 700;
+   height:48px;
+   line-height:48px;
+   color:#031b4e;
+   background: #d5e4f7;
+   border: 1px solid rgba(0,105,255,.2);
+   position:relative;
+}
+#header .form_google-btn{
+    margin-right:48px;
+}
+#header .sign-social img{
+    left:15px;
+}
+
 /* #endregion */
 
 
