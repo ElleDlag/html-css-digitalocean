@@ -219,10 +219,7 @@ main{
     background: #f3f5f9  ;
     padding:60px 0;
 }
-#developers .wrapper-scroller {
-    padding: 0 60px;
-    position:relative;
-}
+
 #developers img{
     width: 100%;
     height: auto;
@@ -238,7 +235,6 @@ main{
 #developers .control-scroller-l,
 #developers .control-scroller-r{
     height:81%;
-    cursor:pointer;
     background:none;
 }
 #developers .control-scroller-l:hover,
@@ -289,7 +285,51 @@ main{
 /* #region  SERVICES */
 #services{
     padding:120px 0;
-    background: #031A4E url("../img/data-center-map-20321538.svg")
+    background: #031A4E url("../img/data-center-map-20321538.svg");
+    color:white;
+}
+#services h2{
+    color:white;
+}
+#services .row{
+    padding:32px 32px 0
+}
+#services .table tr>*{
+    padding:8px 0;
+    vertical-align: middle;
+    font-size:13px;
+    border-top:0;
+    border-bottom:1px solid rgba(255, 255, 255, 0.2)
+}
+#services .table .state{
+    padding-right: 25px;
+    width:20%;
+}
+#services .table .city{
+    width:50%;
+    opacity: 0.6;
+    font-weight: 500;
+}
+#services .table .speed{
+    width:30%;
+    text-align: right;
+    padding-right: 8px;
+}
+#services .table .speed a{
+    color:#00d7d2;
+    font-weight: 400;
+    font-size: 13px
+}
+#services .table .speed a:hover{
+    color:#031b4e;
+}
+@media (max-width:959px){
+    #services .col-sm-6{
+        width:100%
+    }
+    #services .col-sm-6:first-child{
+        margin-bottom: 40px;
+    }
 }
 /* #endregion */
 
@@ -297,23 +337,81 @@ main{
 /* #region  EXPIRIENCE */
 #expirience{
     background:#F3F5F9;
+    padding:120px 0;
 }
-.wrapper-scroller_expirience{
-    background: #fff;
+#expirience .row{
+    position: relative;
+}
+/* #expirience .wrapper-scroller{
+    padding:32px
+} */
+#expirience .wrapper-scroller .bg-scroller{
+    background:#fff;
     padding:32px;
-    height:360px;
+    height: 360px;
 }
+#expirience .control-scroller-l,
+#expirience .control-scroller-r{
+    height:94%;
+    background: none
+}
+#expirience .control-scroller-l:hover,
+#expirience .control-scroller-r:hover{
+    color:#0069ff;
+}
+#expirience .p-section{
+    margin:16px 0;
+}
+#expirience .img-blockqoute{
+    max-width:175px;
+    margin:0 auto 32px auto
+}
+#expirience img{
+    max-width: 100%;
+    height: auto;
+}
+#expirience .p-title{
+    font-weight: 100; 
+    line-height: 2.8rem;
+    text-align: center;
+    opacity: 0.6;
+    letter-spacing: 1px;
+}
+#expirience .wrapper-scroller_footer-1,
+#expirience .wrapper-scroller_footer-2{
+    font-size: 1.6rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+#expirience .wrapper-scroller_footer-2{
+    font-size: 1.2rem;
+    opacity: 0.6
+}
+
+
 /* #endregion */
 
 
-
 /* #region  START NOW */
-.bg-start-now{
+#start-now.bg-start-now{
     background: url("../img/bg-home-1-d54581d7.jpg");
     background-position: 11% 97%;
     background-repeat: no-repeat;
     padding-bottom: 64px;
-    padding-top: 64px;
+    padding-top: 64px
+}
+
+#start-now h2{
+    color:white;
+}
+#start-now .btn{
+    margin-top: 24px;
+    padding:0 32px;
+    height: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    background: #fff;
 }
 /* #endregion */
 
@@ -341,7 +439,10 @@ main{
 
 @media (min-width:1200px){
 }
-@media (max-width:1199){   
+@media (max-width:1199px){
+    #services .row{
+        padding:32px 0 0
+    }   
 }
 @media (max-width:1049px){
     .navbar-fixed-top{
@@ -408,12 +509,12 @@ main{
         margin-bottom: 30px;
     }
 
-    #developers .wrapper-scroller {
+    .wrapper-scroller {
         padding: 0;
         position:relative;
     }
-    #developers .control-scroller-l,
-    #developers .control-scroller-r{
+    .control-scroller-l,
+    .control-scroller-r{
     display: none;
 }
 
