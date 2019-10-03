@@ -251,6 +251,15 @@ main{
 
 
 /* #region  BUSINESS */
+#business{
+    padding:120px 0
+}
+#business .col-sm-3{
+    text-align: left;
+}
+#business h3{
+    font-weight: 700;
+}
 #business #cert-size{
     width:41px;
     height: 41px;
