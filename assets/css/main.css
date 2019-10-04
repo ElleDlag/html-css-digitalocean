@@ -83,10 +83,6 @@
 /* #endregion */
 
 
-/* [class^="col-"]{
-    border:1px solid black;
-} */
-
 /* #region  HEADER */
 main{
     margin-top:40px;
@@ -562,9 +558,6 @@ main{
         margin-top: 0;
     }
 }
-@media (max-width:991){
-
-}
 @media (max-width:767px){
     #header.bg-header{
         background: #0248ff
@@ -584,7 +577,6 @@ main{
         padding:10px;
         margin-bottom: 30px;
     }
-
     .wrapper-scroller {
         padding: 0;
         position:relative;
