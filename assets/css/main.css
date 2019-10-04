@@ -102,23 +102,12 @@ main{
     padding-top: 90px;
     min-height: 800px;
 }
-/* only background */
-/* @media (max-width:1207px){
-#header.bg-header{
-    padding: 104px 0;
-}
-}
-@media (max-width:767px){
-    #header.bg-header{
-        padding: 64px 0;
-        background: #0248ff;
-    }
-} */
-
-
 #header .row{
-    position: relative;
-    padding:64px 0
+    padding:64px 0;
+    position:relative;
+}
+#header .col-sm-7{
+    height:50vh;
 }
 
 /* header form */
@@ -573,9 +562,13 @@ main{
     #header .form-column{
         padding:0;
     }
-    #header .col-sm-7.pos-absolute-yl {
-        position: initial;
-        transform: unset;
+    #header .col-sm-7 {
+        height: auto;;
+    }
+    #header .col-sm-7 .header-title {
+        position: relative;
+        transform: none;
+        margin-left:-15px;
     }
     #partner .col-sm-2:not(:last-child) img,
     #partner .col-sm-2:last-child img{
