@@ -29,11 +29,6 @@ float: left;
 }
 .row{
     text-align: center;
-    /* width:100%; */
-    /* margin:0 */
-}
-.container-fluid{
-    border:1px solid black
 }
 .wrapper{
     margin-left: auto;
@@ -42,10 +37,6 @@ float: left;
     padding-left: 16px;
     padding-right: 16px;
     width: 100%;
-    border:1px solid red
-}
-.row{
-    border:3px solid green
 }
 .wrapper-small{
     margin-left: auto;
@@ -54,7 +45,6 @@ float: left;
     padding-left: 16px;
     padding-right: 16px;
     width: 100%;
-    border:1px solid blue
 }
 /* #endregion */
 
