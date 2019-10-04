@@ -11,19 +11,55 @@
 }
 .navbar .navbar_top{
     border-bottom: 1px solid #ddd;
-    height:40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+.navbar .nav-left-promo{
+    display: inline-block;
+    padding: 2px 0;
+}
+.navbar .navbar_top a.btn{
+    background: #00d7d2;
+    color:#000;
+    text-transform: uppercase;
+    padding:4px 8px;
+    font-size: 9px;
+    line-height: 9px;
+    vertical-align: middle
+}
+.navbar .navbar_top a:not(.btn){
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 17px;
+    color: #777;
+    padding:5px 15px;
+    vertical-align: middle
+}
+.navbar .navbar_bottom .nav-list_bottom a:focus,
+.navbar .navbar_top .nav-list_top a:focus{
+    background: none;
+}
+.navbar .navbar_bottom .nav-list_bottom a:hover,
+.navbar .navbar_top .nav-list_top a:hover{
+    background: none;
+    color: #0069ff
+}
+
+
+
 .navbar .navbar_bottom{
     padding-top:10px;
     padding-bottom:10px
 }
-
 .navbar .navbar_bottom .navbar-brand{
     margin-top: 10px;
     padding:0 15px;
     line-height:29px;
     height:auto;
-    color: #0069ff
+    color: #0069ff;
+    font-weight: 500;
+    font-size: 24px;
 }
 .navbar .navbar_bottom img{
     float:left;
@@ -42,7 +78,7 @@
 }
 .navbar .nav-list_bottom a{
     padding:0 15px;
-}
+    color:#000}
 
 /* #endregion */
 
