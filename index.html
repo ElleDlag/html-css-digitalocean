@@ -9,15 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
     <link rel="stylesheet" href="assets/css/class.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
     <title>Document</title>
 </head>
 <body>
     <!-- sticky navbar -->
 
     <nav class="navbar navbar-fixed-top" id="navbar">
-        <div class="toggle-icon">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
+        <input type="checkbox" name="" id="toggle-check">
+        <label for="toggle-check" id="toggle-icon">
+            <span class="lines-hmb line-1"></span>
+            <span class="lines-hmb line-2"></span>
+            <span class="lines-hmb line-3"></span>
+        </label>
         <div class="container-fluid navbar_top">
             <div class="nav-left-promo">
                     <a class="btn" href="#">new</a>
@@ -37,13 +41,13 @@
                 DigitalOcean
             </a>
             <ul class="nav navbar-nav nav-list_bottom">
-                <li class="">
+                <li>
                     <a href="#" class="main-link">Products <i class="fas fa-angle-down"></i></a>
                     <div class="submenu submenu-1 ps-absolute-top">
                         <div class="wrapper clearfix">
                             <div class="submenu-col-3">
                                 <h2 class="submenu-title">FEATURED PRODUCTS</h2>
-                                <ul>
+                                <ul class="big-order">
                                     <li>
                                         <a href="#" class="main-sublink">
                                             <img src="assets/img/drop_2.svg" alt="">
@@ -151,16 +155,16 @@
                         </div>
                     </div>
                 </li>
-                <li class=""><a href="#" class="main-link">Marketplace</a></li>
-                <li class=""><a href="#" class="main-link">Customers</a></li>
-                <li class=""><a href="#" class="main-link">Partners</a></li>
-                <li class="">
+                <li><a href="#" class="main-link">Marketplace</a></li>
+                <li><a href="#" class="main-link">Customers</a></li>
+                <li><a href="#" class="main-link">Partners</a></li>
+                <li>
                     <a href="#" class="main-link">Community <i class="fas fa-angle-down"></i></a>
                     <div class="submenu submenu-2 ps-absolute-top">
                         <div class="wrapper clearfix">
                             <div class="submenu-col-3">
                                 <h2 class="submenu-title">FEATURED PRODUCTS</h2>
-                                <ul>
+                                <ul class="big-order">
                                     <li>
                                         <a href="#" class="main-sublink">
                                             <img src="assets/img/lifebelt.svg" alt="">
@@ -244,13 +248,113 @@
                         </div>
                     </div>
                 </li>
-                <li class=""><a href="#" class="main-link">Pricing</a></li>
+                <li><a href="#" class="main-link">Pricing</a></li>
             </ul>
             <form class="navbar-form navbar-right">
                 <button type="submit" class="btn btn-success">Sign up</button>
             </form>
         </div>
-        <div class="container nav_tooggle"></div>
+        <div class="wrapper_nav-toggle pos-absolute-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="big-order"><!-- SXXXXXXXXXXXXXXXXXX -->
+                            <li>
+                                <a href="#" class="main-sublink">
+                                    <img src="assets/img/drop_2.svg" alt="">
+                                    <div class="wrapper_description">
+                                        <h3 class="h3-section_sub">Droplets</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="main-sublink">
+                                    <img src="assets/img/timone.svg" alt="">
+                                    <div class="wrapper_description">
+                                        <h3 class="h3-section_sub">Kubernetes</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="main-sublink">
+                                    <img src="assets/img/database.svg" alt="">
+                                    <div class="wrapper_description">
+                                        <h3 class="h3-section_sub">Databases</h3>
+                                    </div>
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="" class="main-sublink">
+                                    <img src="assets/img/circle.svg" alt="">
+                                    <div class="wrapper_description">
+                                        <h3 class="h3-section_sub">Spaces</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="main-sublink">
+                                    <img src="assets/img/drop_3.svg" alt="">
+                                    <div class="wrapper_description">
+                                        <h3 class="h3-section_sub">Load Balancers</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="main-sublink">
+                                    <img src="assets/img/cube.svg" alt="">
+                                    <div class="wrapper_description">
+                                        <h3 class="h3-section_sub">Block Storage</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="main-sublink">
+                                    <img src="assets/img/pack.svg" alt="">
+                                    <div class="wrapper_description">
+                                        <h3 class="h3-section_sub">Marketplace</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="main-sublink">
+                                    <img src="assets/img/paper2.svg" alt="">
+                                    <div class="wrapper_description">
+                                        <h3 class="h3-section_sub">API Documentation</h3>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <ul class="list-link-toggle">
+                            <li><a href="">Community</a></li>
+                            <li><a href="">Tutorials</a></li>
+                            <li><a href="">Custuomers</a></li>
+                            <li><a href="">Partners</a></li>
+                            <li><a href="">Hatch</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6">
+                        <ul class="list-link-toggle">
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Docs</a></li>
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Sales</a></li>
+                            <li><a href="">Sign in</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 nav-toggle_footer">
+                        <a class="btn" href="#" role="button">
+                        Sign Up
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
     
     <!-- START header -->
