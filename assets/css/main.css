@@ -62,7 +62,7 @@
 }
 .navbar .navbar_bottom img{
     float:left;
-    margin-right: 10px;
+    margin-right: 15px;
     height:29px;
 }
 .navbar .navbar_bottom img.img-white{
@@ -75,32 +75,59 @@
     margin-top:14px;
     margin-left:64px;
 }
-.navbar .nav-list_bottom a{
+.navbar .nav-list_bottom a.main-link{
     padding:0 15px;
     color:#000
 }
+.navbar .nav-list_bottom a.main-link:hover + .submenu{
+    display: block
+}
+.navbar .navbar_bottom .btn.btn-success {
+    padding:6px 9px;
+    background: #fff;
+    border:2px solid #0069ff;
+    color:#0069ff
+}
 
+/* #region  SUBMENU */
 .navbar .submenu{
     position: absolute;
     top: 46px;
     left: -284px;
     width: 99.9vw;
-    background: aliceblue;
+    box-shadow:inset 0 2px 4px rgba(3,27,78,.1);
+    background: #fff;
+    display:none;
 }
-.navbar .submenu .wrapper{
-    border:1px solid red;
+.navbar .submenu-2{
+    left: -720px;   
+}
+.navbar .nav-list_bottom  a.main-sublink{
+    color:#000
+}
+.navbar .wrapper>.submenu-col-3 {
+    border-right:1px solid #ddd;
+    padding-top:55px;
 }
 .navbar .submenu-col-3 {
     width: calc((100% / 9) * 3);
-    border: 1px solid white;
+    padding-left:16px;
+    padding-bottom:20px;
 }
 .navbar .submenu-col-6 {
     width: calc((100% / 9) * 6);
-    border: 1px solid white;
-    height:100%;
+    height:100%;    
+    padding-left:16px;
+    padding-top:55px;
 }
 .navbar .submenu .wrapper_description{
     display: inline-block
+}
+.navbar .submenu-col-3>ul {
+    padding-left: 0;
+}
+.navbar .submenu-col-3>ul h3  {
+    margin:0
 }
 .navbar .submenu-col-3>ul li img{
    height: 37px;
@@ -111,10 +138,43 @@
 .navbar .wrapper_description .p-section_sub{
     opacity:0.6
 }
+.navbar .wrapper_description .sublink-2{
+    padding-left: 0;
+    margin-top:16px;
+}
+.navbar .submenu-col-3 .submenu_bottom{
+    margin-top: 60px;
+}
+.navbar .submenu .submenu-footer{
+    border-top:1px solid #ddd;
+    opacity: 0.6;
+    padding: 16px 0;    
+}
 .navbar .submenu .submenu_top img,
 .navbar .submenu .submenu_bottom img{
     width:16px;
 }
+.navbar .submenu-2 .submenu-col-3{ 
+    height:450px;
+}
+.navbar .submenu-2 .sm2-last-col{
+    border-right:none;
+}
+.navbar .submenu-2 .sm2-last-col div{
+    height:70px;
+    display: block;
+    max-width:325px;
+}
+
+.navbar .submenu-2 .sublink-2{
+    padding-left: 20px;
+}
+.navbar .submenu-2 .img-preview {
+    width:70px;
+    height:auto;
+}
+
+/* #endregion */
 /* #endregion */
 
 
