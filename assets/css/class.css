@@ -191,6 +191,19 @@ ul.ul-btn-scroller{
 }
 ul.ul-btn-scroller{
     display: inline-block;
+    padding:16px 0
+}
+ul.ul-btn-scroller li{
+    background: white;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #006fe8;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+ul.ul-btn-scroller li:hover{
+    background: #006fe8;
 }
 ul.ul-footer {
     text-align: left;
